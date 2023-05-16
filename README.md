@@ -23,13 +23,15 @@ Register no: 212222230165
 ```
 # CODE
 ```
-#loading the dataset
+# loading the dataset
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 df=pd.read_csv("Superstore.csv")
 df
-#removing unnecessary data variables
+```
+# removing unnecessary data variables
+```
 df.drop('Row ID',axis=1,inplace=True)
 df.drop('Order ID',axis=1,inplace=True)
 df.drop('Customer ID',axis=1,inplace=True)
@@ -44,7 +46,9 @@ print("Updated dataset")
 df
 
 df.isnull().sum()
-#detecting and removing outliers in current numeric data
+```
+# detecting and removing outliers in current numeric data
+```
 plt.figure(figsize=(12,10))
 plt.title("Data with outliers")
 df.boxplot()
@@ -59,8 +63,10 @@ df = df[~((df[cols] < (Q1 - 1.5 * IQR)) |(df[cols] > (Q3 + 1.5 * IQR))).any(axis
 plt.title("Dataset after removing outliers")
 df.boxplot()
 plt.show()
-#data visualization
-#line plots
+```
+# data visualization
+# line plots
+```
 import seaborn as sns
 sns.lineplot(x="Sub-Category",y="Sales",data=df,marker='o')
 plt.title("Sub Categories vs Sales")
@@ -115,7 +121,9 @@ sns.barplot(x="State",y="Sales",hue="Region",data=df)
 plt.title("State vs Sales based on Region")
 plt.xticks(rotation = 90)
 plt.show()
-#Histogram
+```
+# Histogram
+```
 sns.histplot(data = df,x = 'Region',hue='Ship Mode')
 sns.histplot(data = df,x = 'Category',hue='Quantity')
 sns.histplot(data = df,x = 'Sub-Category',hue='Category')
@@ -124,13 +132,17 @@ plt.show()
 sns.histplot(data = df,x = 'Quantity',hue='Segment')
 plt.hist(data = df,x = 'Profit')
 plt.show()
-#count plot
+```
+# count plot
+```
 plt.figure(figsize=(10,7))
 sns.countplot(x ='Segment', data = df,hue = 'Sub-Category')
 sns.countplot(x ='Region', data = df,hue = 'Segment')
 sns.countplot(x ='Category', data = df,hue='Discount')
 sns.countplot(x ='Ship Mode', data = df,hue = 'Quantity')
-#Barplot 
+```
+# Barplot 
+```
 sns.boxplot(x="Sub-Category",y="Discount",data=df)
 plt.xticks(rotation = 90)
 plt.show()
@@ -152,7 +164,9 @@ plt.figure(figsize=(15,7))
 sns.boxplot(x="State",y="Sales",data=df)
 plt.xticks(rotation = 90)
 plt.show()
-#KDE plot
+```
+# KDE plot
+```
 sns.kdeplot(x="Profit", data = df,hue='Category')
 sns.kdeplot(x="Sales", data = df,hue='Region')
 sns.kdeplot(x="Quantity", data = df,hue='Segment')
@@ -161,11 +175,15 @@ sns.kdeplot(x="Discount", data = df,hue='Segment')
 sns.violinplot(x="Profit",data=df)
 sns.violinplot(x="Discount",y="Ship Mode",data=df)
 sns.violinplot(x="Quantity",y="Ship Mode",data=df)
-#point plot
+```
+# point plot
+```
 sns.pointplot(x=df["Quantity"],y=df["Discount"])
 sns.pointplot(x=df["Quantity"],y=df["Category"])
 sns.pointplot(x=df["Sales"],y=df["Sub-Category"])
-#Pie Chart
+```
+# Pie Chart
+```
 df.groupby(['Category']).sum().plot(kind='pie', y='Discount',figsize=(6,10),pctdistance=1.7,labeldistance=1.2)
 df.groupby(['Sub-Category']).sum().plot(kind='pie', y='Sales',figsize=(10,10),pctdistance=1.7,labeldistance=1.2)
 df.groupby(['Region']).sum().plot(kind='pie', y='Profit',figsize=(6,9),pctdistance=1.7,labeldistance=1.2)
@@ -189,8 +207,9 @@ plt.pie(df1["Sales"],labels=labels,autopct="%0.0f%%")
 plt.show()
 #HeatMap
 df4=df.copy()
-
-#encoding
+```
+# encoding
+```
 from sklearn.preprocessing import LabelEncoder,OrdinalEncoder,OneHotEncoder
 le=LabelEncoder()
 ohe=OneHotEncoder
@@ -203,14 +222,16 @@ df4["State"]=le.fit_transform(df[["State"]])
 df4['Region'] = oe.fit_transform(df[['Region']])
 df4["Category"]=oe.fit_transform(df[["Category"]])
 df4["Sub-Category"]=le.fit_transform(df[["Sub-Category"]])
-
-#scaling
+```
+# scaling
+```
 from sklearn.preprocessing import RobustScaler
 sc=RobustScaler()
 df5=pd.DataFrame(sc.fit_transform(df4),columns=['Ship Mode', 'Segment', 'City', 'State','Region',
                                                'Category','Sub-Category','Sales','Quantity','Discount','Profit'])
-
-#Heatmap
+```
+# Heatmap
+```
 plt.subplots(figsize=(12,7))
 sns.heatmap(df5.corr(),cmap="PuBu",annot=True)
 plt.show()
