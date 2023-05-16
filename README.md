@@ -237,126 +237,62 @@ sns.heatmap(df5.corr(),cmap="PuBu",annot=True)
 plt.show()
 ```
 # OUPUT
-Initial Dataset:
+![Screenshot 2023-05-16 110445](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/310c190d-78d8-45f9-a1c6-98a7b12459d7)
 
+![Screenshot 2023-05-16 110455](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/ca6b68f7-6ecb-469f-a243-e693a5a46c6c)
 
-Cleaned Dataset:
+![Screenshot 2023-05-16 110501](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/06333c1a-97cf-4191-b18d-2dd2614f694d)
 
+![Screenshot 2023-05-16 110532](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/5aa61f6d-4e73-4ba4-afba-2b89480636f7)
 
+![Screenshot 2023-05-16 110548](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/36fca48b-826b-47ff-8a1c-4b4b8b1f7b08)
 
+![Screenshot 2023-05-16 110556](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/df4e89fb-5dbb-4361-a93b-b0190a0655b3)
 
-Removing Outliers:
+![Screenshot 2023-05-16 110603](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/331cb8a7-40ad-4ca0-9d56-87ac1faf713c)
 
+![Screenshot 2023-05-16 110611](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/2518038f-a582-4a3f-860f-1cf1d207cbb4)
 
+![Screenshot 2023-05-16 110618](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/6616c4ed-517c-42ee-af42-6f4bce0525a2)
 
+![Screenshot 2023-05-16 110626](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/97bbc0f2-3b8b-47f2-af90-48421852b2ac)
 
-Line PLot:
+![Screenshot 2023-05-16 110633](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/9ca5f9c8-d086-4260-8f96-4aa4c3b8cdba)
 
+![Screenshot 2023-05-16 110641](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/45a102c3-5e32-4196-9a71-195485611558)
 
+![Screenshot 2023-05-16 110648](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/f90516bc-01fe-4a7b-ac6f-3853b872c8c7)
 
+![Screenshot 2023-05-16 110705](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/f3a350b6-2aea-4db8-9114-735b9f1a424e)
 
+![Screenshot 2023-05-16 110721](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/27e8e191-c739-45a3-8572-c90ecf7d1c39)
 
+![Screenshot 2023-05-16 110735](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/abac0db6-bda3-4e23-b959-a6f43337c114)
 
+![Screenshot 2023-05-16 110748](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/e4639716-f601-4274-9111-4bc72f318933)
 
+![Screenshot 2023-05-16 110808](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/e03495a4-97c5-430a-bfb2-4dd50a4d2630)
 
+![Screenshot 2023-05-16 110818](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/81460a8d-e770-4a7b-9114-5f60f2a4aa14)
 
+![Screenshot 2023-05-16 110831](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/dacf2462-097e-4599-bcef-894f0b58e833)
 
+![Screenshot 2023-05-16 110837](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/297d3e0d-0974-4868-8738-c9e2898834c0)
 
+![Screenshot 2023-05-16 110846](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/c873f9c4-5c97-4be8-80f4-a2da897ac5d6)
 
+![Screenshot 2023-05-16 110944](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/448cddab-7ce9-4256-a687-d2b7e3c12901)
 
+![Screenshot 2023-05-16 110950](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/7c4c9196-7b5c-45a1-b4e7-c5dc87fef7b2)
 
-Bar Plots:
+![Screenshot 2023-05-16 110957](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/414b3f07-9bb4-4d43-81c0-0885062184b8)
 
+![Screenshot 2023-05-16 111009](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/4d9e736a-59b1-4600-899e-79e5eca77b3c)
 
+![Screenshot 2023-05-16 111022](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/7a563208-bc68-4f0c-aed7-e094f00928f5)
 
 
+![Screenshot 2023-05-16 111030](https://github.com/Vaishnavi-saravanan/Ex-08-Data-Visualization_1/assets/118541897/c0ffc9a8-20eb-4d5d-8a63-3bbe851347ea)
 
-
-
-
-
-
-
-
-Histograms:
-
-
-
-
-
-
-
-
-
-
-Count plots:
-
-
-
-
-
-
-
-
-
-
-Bar Charts:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-KDE Plots:
-
-
-
-
-
-
-
-
-Violin Plot:
-
-
-
-
-
-
-
-
-Point Plots:
-
-
-
-
-
-
-Pie Charts:
-
-
-
-
-
-
-
-
-
-
-
-
-HeatMap:
-
-
-Result:
+# Result:
 Hence,Data Visualization is applied on the complex dataset using libraries like Seaborn and Matplotlib successfully and the data is saved to file
